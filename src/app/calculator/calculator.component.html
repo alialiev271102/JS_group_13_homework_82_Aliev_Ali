@@ -1,0 +1,6 @@
+<div class="calculator">
+  <div>{{ calculate | async }}</div>
+  <button *ngFor="let i of arr" (click)="addNumbers(i)" class="calculator-btn" >{{ i }}</button>
+  <button class="calculator-btn" (click)="getAnswer()">=</button>
+  <button class="calculator-btn" (click)="deleteNumber()"><-</button>
+</div>
